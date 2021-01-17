@@ -1,0 +1,66 @@
+.nav__container {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .nav__container {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    /* background-color: palegoldenrod; */
+  }
+
+  .nav__container::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .nav__container h2 {
+    float: left;
+  }
+
+  nav {
+    float: left;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 80px;
+    margin-right: 10px;
+    padding-top: 25px;
+    position: relative;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: 0.5s all;
+  }
+
+  nav a:hover {
+    opacity: 1;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    width: 100%;
+  }
+}

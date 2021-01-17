@@ -1,0 +1,147 @@
+.profile__wrap {
+  text-align: center;
+}
+
+.profile__wrap img {
+  width: 200px;
+  border-radius: 50%;
+  pointer-events: none;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.profile__information h1 {
+  font-size: 30px;
+  display: inline-block;
+  font-weight: 100;
+  position: relative;
+}
+
+.profile__information h1:after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 200px;
+  background-color: #fff;
+  left: 0;
+  bottom: -2px;
+}
+
+.profile__introduction {
+  padding: 1rem 10px 1.5rem;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.profile__introduction a {
+  color: white;
+}
+
+.profile__contact a {
+  display: inline-block;
+  background-color: white;
+  color: #f162ae;
+  padding: 10px 2rem;
+  text-decoration: none;
+  border-radius: 99rem;
+  border: 2px solid white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: 0.5s ease;
+}
+
+.profile__contact a:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+.social__links {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.social__links li {
+  display: inline-block;  
+  padding: 0 5px;
+  margin-right: 15px;
+}
+
+.social__links a {
+  font-size: 20px;
+  color: white;
+  opacity: 0.5;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.social__links a:hover {
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .profile__wrap {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .profile__wrap img {
+    margin-bottom: 0;
+    width: 250px;
+  }
+
+  .profile__information {
+    text-align: left;
+    flex-basis: 70%;
+    width: 70%;
+  }
+
+  .profile__information h1 {
+    font-size: 40px
+  }
+
+  .profile__introduction {
+    padding: 1rem 0 1.5;
+    font-size: 17px;
+  }
+
+  .profile__contact a {
+    padding: 8px 2.5rem;
+  }
+
+  .social__links li {
+    margin-right: 35px;
+  }
+}
+
+@media screen and (device-aspect-ratio: 40/71) {
+  .profile__wrap {
+    width: 280px;
+  }
+
+  .profile__wrap img {
+    width: 140px; 
+  }
+
+  .profile__information h1 {
+    font-size: 30px;
+  }
+
+  .profile__introduction {
+    font-size: 13px;
+  }
+
+  .profile__contact a {
+    padding: 6px 1rem;
+    width: 150px;
+  }
+
+  .social__links li a {
+    font-size: 15px;
+  }
+}
